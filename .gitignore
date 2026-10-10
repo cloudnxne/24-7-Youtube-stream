@@ -1,0 +1,11 @@
+secrets/*
+!secrets/.gitkeep
+data/assets/*
+!data/assets/.gitkeep
+data/logs/*
+!data/logs/.gitkeep
+*.wav
+*.mp3
+*.m4v
+*.ttf
+.stream_key

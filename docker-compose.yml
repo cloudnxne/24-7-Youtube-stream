@@ -1,0 +1,10 @@
+services:
+  stream:
+    build: .
+    container_name: pondlife-stream
+    restart: unless-stopped
+    init: true
+    volumes:
+      - ./data/assets:/home/pondlife/assets        # loop.m4v, tracks/, watermarks/, fonts/
+      - ./data/logs:/home/pondlife/logs
+      - ./secrets/stream_key:/home/pondlife/.stream_key:ro   # your YouTube stream key, never commit this
